@@ -26,10 +26,10 @@ if load or st.session_state.load_state:
 
 opt = st.radio('Plot type :', ['Bar', 'Pie'])
 
-     if opt == 'Bar':
-           fig = px.bar(_df, x = 'Name', y = 'Quantity', title = 'Bar Chart')
-           st.plotly_chart(fig)
-     else:
+if opt == 'Bar':
+     fig = px.bar(_df, x = 'Name', y = 'Quantity', title = 'Bar Chart')
+     st.plotly_chart(fig)
+else:
 
-           fig = px.pie(_df, names = 'Name', values = 'Quantity', title = 'Pie Chart')
-           st.plotly_chart(fig)
+     fig = px.pie(_df, names = 'Name', values = 'Quantity', title = 'Pie Chart')
+     st.plotly_chart(fig)
