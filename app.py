@@ -30,6 +30,5 @@ if opt == 'Bar':
      fig = px.bar(_df, x = 'Name', y = 'Quantity', title = 'Bar Chart')
      st.plotly_chart(fig)
 else:
-
      fig = px.pie(_df, names = 'Name', values = 'Quantity', title = 'Pie Chart')
      st.plotly_chart(fig)
