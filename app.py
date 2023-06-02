@@ -5,7 +5,7 @@ import plotly.express as px
 st.header("Fruit List")
 
 _dic = {
-'Name': ['Mango', ?Apple', 'Banana'],
+'Name': ['Mango', 'Apple', 'Banana'],
 'Quantity': [45, 38, 90]
 }
 
